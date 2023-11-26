@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-box::before{
+  --tw-bg-opacity: 1;
+  content: "Having lots of confusion about career?";
+  width: 200px;
+  height: 200px;
+  border-top: 12px solid transparent;
+  /* border-bottom: 10px solid transparent; Adjust the size of the triangle */
+  border-right: 12px solid  rgb(255 237 213 / var(--tw-bg-opacity));
+  /* position: absolute; */
+  /* left: 12px;
+  bottom: 0px; */ 
+}
+.inputclass{
+  outline: none !important;
+  border: none !important;
+  outline-offset: 0 !important;
+}
+
+.overflow-x-scroll {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  scrollbar-width: none; /* Hide the scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide the scrollbar in IE and Edge */
+}
+
+/* Hide the scrollbar in Webkit browsers (Safari, Chrome) */
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
 }

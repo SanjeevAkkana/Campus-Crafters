@@ -1,0 +1,11 @@
+export {default as Navbar} from './Navbar';
+export {default as MainLayout} from './MainLayout';
+export {default as Carousel} from './Carousel';
+export {default as HomeTopComponent} from './HomeTopComponent';
+export {default as Topics} from './Topics';
+export {default as ServicesInHome} from './ServicesInHome';
+export {default as TopicsInHome} from './TopicsInHome';
+export {default as ServicesSection} from './ServicesSection';
+export {default as PaidServices} from './PaidServices';
+export {default as BlogsInHome} from './BlogsInHome';
+export {default as AuthorsInHome} from './AuthorsInHome';
